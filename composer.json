@@ -1,0 +1,50 @@
+{
+    "name": "softflies/framework",
+    "description": "The softflies Framework.",
+    "keywords": ["framework", "softflies"],
+    "license": "MIT",
+    "homepage": "https://softflies.com",
+    "support": {
+        "issues": "https://github.com/softflies/framework/issues",
+        "source": "https://github.com/softflies/framework"
+    },
+    "authors": [
+        {
+            "name": "Amit Roy",
+            "email": "amit@softflies.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "autoload": {
+        "files": [
+            "src/Inculcate/collections/helpers.php",
+            "src/Inculcate/controllers/helpers.php",
+            "src/Inculcate/foundation/helpers.php",
+            "src/Inculcate/view/helpers.php",
+            "src/Inculcate/routing/helpers.php"
+        ],
+        "psr-4": {
+            "Inculcate\\": "src/Inculcate/"
+        }
+    },
+    "replace": {
+        "inculcate/view": "self.version",
+        "inculcate/routing": "self.version",
+        "inculcate/foundation": "self.version",
+        "inculcate/collections": "self.version",
+        "inculcate/controllers": "self.version",
+        "inculcate/console": "self.version"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
